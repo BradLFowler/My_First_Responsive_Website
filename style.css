@@ -1,0 +1,42 @@
+section#gridcontainer {
+    display: grid;
+    grid-template-rows:  repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "main main main"
+    "one two three";
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+/*figure out how to make background fill the page*/
+h1 {
+    background-color: blue;
+    border: solid 2px orange;
+    border-width: 300px; 
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
